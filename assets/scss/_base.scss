@@ -1,0 +1,83 @@
+/* debug 用
+* {
+    outline: 1px solid blue;
+} */
+
+/* 全域設定 */
+*,
+*::before,
+*a::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color-neutral-900);
+    font-family: "Noto Sans", sans-serif;
+    letter-spacing: var(--letter-spacing);
+    line-height: var(--line-height-p);
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-neutral-900);
+}
+
+/* 容器 */
+.container {
+    max-width: calc(1296px + 12px * 2);
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* 推擠 */
+
+.mb {
+    &-80 {
+        margin-bottom: 80px;
+    }
+
+    &-64 {
+        margin-bottom: 64px;
+    }
+
+    &-48 {
+        margin-bottom: 48px;
+    }
+
+    &-24 {
+        margin-bottom: 24px;
+    }
+
+    &-16 {
+        margin-bottom: 16px;
+    }
+
+    &-12 {
+        margin-bottom: 12px;
+    }
+
+    &-4 {
+        margin-bottom: 4px;
+    }
+}
+
+
+
+/* 通用設定 */
+
+.text-on-dark {
+    color: var(--color-neutral-white);
+}
+
+.heading {
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-heading);
+}
