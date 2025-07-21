@@ -1,11 +1,42 @@
 .footer {
-    padding-top: 64px;
-    padding-bottom: 64px;
     background: var(--color-neutral-100);
 
-    p {
+    .navBar {
+        @include phone {
+            display: block;
+            img {
+                margin-bottom: 8px;
+            }
+            li {
+                margin-left: 0;
+            }
+            .linkBtn {
+                margin-left: 12px;
+            }
+        }
+    }
+
+    .copyright {
         text-align: center;
-        color: var(--color-neutral-600);
-        font-size: var(--font-size-psm);
+        padding-top: 32px;
+        p {
+            color: $color-neutral-600;
+            font-size: var(--font-size-psm);
+        }
     }
 }
+
+.registrationAd {
+    background: $color-primary-200;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+
+    p {
+        font-size: var(--font-size-h4);
+        @include phone() {
+            font-size: var(--font-size-h5);
+        }
+    }
+}
+

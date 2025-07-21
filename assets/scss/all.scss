@@ -5,8 +5,9 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Huninn&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Tourney:ital,wdth,wght@0,75..125,100..900;1,75..125,100..900&display=swap');
 
-/* 變數 */
+/* 參數 */
 @import 'variable';
+@import 'mixin';
 
 /* 元件＆雜項 */
 @import 'base';
@@ -17,3 +18,5 @@
 
 /* 分頁樣式 */
 @import './pages/index';
+@import './pages/productList';
+@import './pages/product';

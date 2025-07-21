@@ -1,0 +1,17 @@
+.navBar {
+    align-items: center;
+    font-weight: var(--font-weight-medium);
+    .bi-person {
+        padding: 13px;
+        &:hover {
+            color: lighten($color-neutral-900, 40%);
+        }
+    }
+}
+.nav-main {
+    @include phone() {
+        .linkBtn {
+            display: none;
+        }
+    }
+}
