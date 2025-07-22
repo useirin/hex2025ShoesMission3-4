@@ -1,6 +1,4 @@
 .nav-breadcrumb {
-    font-weight: var(--font-weight-medium);
-
     li+li::before {
         content: '/';
         color: $color-neutral-300;
@@ -16,6 +14,14 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
+
+    li:first-child {
+        margin-right: 4px;
+    }
+    li:last-child {
+        margin-left: 4px;
+    }
+
     &-item {
         width: 40px;
         text-align: center;
@@ -32,6 +38,7 @@
             background: $color-neutral-100;
         }
     }
+
     .activated {
         background: $color-primary-300;
         pointer-events: none;

@@ -15,6 +15,7 @@ body {
     font-family: "Noto Sans", sans-serif;
     letter-spacing: var(--letter-spacing);
     line-height: var(--line-height-p);
+    font-weight: var(--font-weight-medium);
 }
 
 img {
@@ -33,6 +34,7 @@ button {
     font-family: "Noto Sans", sans-serif;
     letter-spacing: var(--letter-spacing);
     line-height: var(--line-height-p);
+    font-weight: var(--font-weight-medium);
     border: none;
     cursor: pointer;
     border-radius: 4px;
@@ -261,8 +263,8 @@ button {
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-heading);
 }
-.weight-m {
-    font-weight: var(--font-weight-medium);
+.weight-regular {
+    font-weight: var(--font-weight-regular);
 }
 
 .section-border {
