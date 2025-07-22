@@ -9,3 +9,9 @@
         @content
     }
 }
+
+@mixin phone-sm {
+    @media (max-width: 320px) {
+        @content
+    }
+}

@@ -236,6 +236,13 @@ button {
     }
 }
 
+.breakline {
+    display: none;
+    @include phone-sm() {
+        display: inline-block;
+    }
+}
+
 .text-primary-400 {
     color: $color-primary-400;
 }
