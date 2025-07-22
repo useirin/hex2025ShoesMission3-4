@@ -1,0 +1,40 @@
+.nav-breadcrumb {
+    font-weight: var(--font-weight-medium);
+
+    li+li::before {
+        content: '/';
+        color: $color-neutral-300;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    a {
+        color: $color-neutral-600;
+    }
+}
+
+.pagination {
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    &-item {
+        width: 40px;
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    button {
+        width: 40px;
+        height: 40px;
+        border-radius: 0px;
+        background: transparent;
+        &:hover {
+            background: $color-neutral-100;
+        }
+    }
+    .activated {
+        background: $color-primary-300;
+        pointer-events: none;
+        font-weight: var(--font-weight-medium);
+    }
+}

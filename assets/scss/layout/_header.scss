@@ -1,17 +1,18 @@
 .navBar {
     align-items: center;
     font-weight: var(--font-weight-medium);
+
+    a:hover {
+        color: lighten($color-neutral-900, 40%);
+    }
+
+    .linkBtn {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
     .bi-person {
         padding: 13px;
-        &:hover {
-            color: lighten($color-neutral-900, 40%);
-        }
     }
 }
-.nav-main {
-    @include phone() {
-        .linkBtn {
-            display: none;
-        }
-    }
-}
+
