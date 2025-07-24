@@ -212,12 +212,30 @@ button {
 }
 
 .py {
+    &-64 {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
     &-32 {
         padding-top: 32px;
         padding-bottom: 32px;
     }
 }
 
+@media (max-width: 768px) {
+    .py-sm {
+        &-0 {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        &-32 {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+    }
+}
 
 /* 通用設定 */
 .d-flex {
