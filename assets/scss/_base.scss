@@ -248,10 +248,6 @@ button {
     }
 }
 
-.m0-a {
-    margin: 0 auto;
-}
-
 .pb {
     &-48 {
         padding-bottom: 48px;
@@ -310,6 +306,9 @@ button {
 /* 通用設定 */
 .d-flex {
     display: flex;
+}
+.flex-jcc {
+    justify-content: center;
 }
 
 .d-lg-none {
