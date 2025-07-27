@@ -5,13 +5,19 @@
 }
 
 @mixin phone {
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         @content
     }
 }
 
 @mixin phone-sm {
-    @media (max-width: 320px) {
+    @media (max-width: 576px) {
+        @content
+    }
+}
+
+@mixin phone-xsm {
+    @media (max-width: 375px) {
         @content
     }
 }

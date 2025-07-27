@@ -1,7 +1,7 @@
-/* debug 用
-* {
-    outline: 1px solid blue;
-} */
+// debug 用
+// * {
+//     outline: 1px solid blue;
+// }
 
 /* 全域設定 */
 *,
@@ -31,7 +31,7 @@ a {
 }
 
 button {
-    font-family: "Noto Sans", sans-serif;
+    font-family: inherit;
     letter-spacing: var(--letter-spacing);
     line-height: var(--line-height-p);
     font-weight: var(--font-weight-medium);
@@ -63,55 +63,71 @@ button {
     width: calc(100% / 12);
     padding-left: 12px;
     padding-right: 12px;
-}
-.col-2 {
-    width: calc(100% / 12 * 2);
-    padding-left: 12px;
-    padding-right: 12px;
-}
-.col-4 {
-    width: calc(100% / 12 * 4);
-    padding-left: 12px;
-    padding-right: 12px;
-}
-.col-5 {
-    width: calc(100% / 12 * 5);
-    padding-left: 12px;
-    padding-right: 12px;
-}
-.col-6 {
-    width: calc(100% / 12 * 6);
-    padding-left: 12px;
-    padding-right: 12px;
-}
-.col-7 {
-    width: calc(100% / 12 * 7);
-    padding-left: 12px;
-    padding-right: 12px;
-}
-.col-10 {
-    width: calc(100% / 12 * 10);
-    padding-left: 12px;
-    padding-right: 12px;
+
+    &-2 {
+        width: calc(100% / 12 * 2);
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    &-3 {
+        width: calc(100% / 12 * 3);
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    &-4 {
+        width: calc(100% / 12 * 4);
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    &-5 {
+        width: calc(100% / 12 * 5);
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    &-6 {
+        width: calc(100% / 12 * 6);
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    &-7 {
+        width: calc(100% / 12 * 7);
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    &-10 {
+        width: calc(100% / 12 * 10);
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+    .col-md-5 {
+        width: calc(100% / 12 * 5);
+    }
+    
+    .col-md-7 {
+        width: calc(100% / 12 * 7);
+    }
+}
+
+@media (max-width: 767px) {
     .col-sm {
         width: calc(100% / 4);
-        padding-left: 12px;
-        padding-right: 12px;
-    }
 
-    .col-sm-2 {
-        width: calc(100% / 4 * 2);
-        padding-left: 12px;
-        padding-right: 12px;
-    }
+        &-2 {
+            width: calc(100% / 4 * 2);
+        }
 
-    .col-sm-4 {
-        width: calc(100% / 4 * 4);
-        padding-left: 12px;
-        padding-right: 12px;
+        &-4 {
+            width: 100%;
+        }
     }
 }
 
@@ -127,6 +143,10 @@ button {
 
     &-48 {
         margin-bottom: 48px;
+    }
+
+    &-32 {
+        margin-bottom: 32px;
     }
 
     &-24 {
@@ -145,12 +165,16 @@ button {
         margin-bottom: 12px;
     }
 
+    &-8{
+        margin-bottom: 8px;
+    }
+
     &-4 {
         margin-bottom: 4px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .mb-sm {
         &-32 {
             margin-bottom: 32px;
@@ -166,6 +190,10 @@ button {
 
         &-12 {
             margin-bottom: 12px;
+        }
+
+        &-8 {
+            margin-bottom: 8px;
         }
 
         &-4 {
@@ -190,12 +218,15 @@ button {
     &-12 {
         margin-left: 12px;
     }
+    &-8 {
+        margin-left: 8px;
+    }
     &-4 {
         margin-left: 4px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .ml-sm {
         &-16 {
             margin-left: 16px;
@@ -217,22 +248,36 @@ button {
         padding-bottom: 64px;
     }
 
+    &-48 {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
     &-32 {
         padding-top: 32px;
         padding-bottom: 32px;
     }
+    &-12 {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .py-sm {
-        &-0 {
-            padding-top: 0;
-            padding-bottom: 0;
+        &-40 {
+            padding-top: 40px;
+            padding-bottom: 40px;
         }
 
         &-32 {
             padding-top: 32px;
             padding-bottom: 32px;
+        }
+
+        &-0 {
+            padding-top: 0;
+            padding-bottom: 0;
         }
     }
 }
@@ -256,7 +301,7 @@ button {
 
 .breakline {
     display: none;
-    @include phone-sm() {
+    @include phone-xsm() {
         display: inline-block;
     }
 }
@@ -264,12 +309,18 @@ button {
 .text-primary-400 {
     color: $color-primary-400;
 }
+.text-attention {
+    color: $color-danger-300;
+}
 .text-on-dark {
     color: $color-neutral-white;
 }
 
 .fontsize-h1 {
     font-size: var(--font-size-h1);
+}
+.fontsize-h2 {
+    font-size: var(--font-size-h2);
 }
 .fontsize-h3 {
     font-size: var(--font-size-h3);
@@ -282,6 +333,20 @@ button {
 }
 .fontsize-h6 {
     font-size: var(--font-size-h6);
+}
+
+@media (max-width: 768px) {
+    .fontsize-sm {
+        &-h4 {
+            font-size: var(--font-size-h4);
+        }
+        &-h5 {
+            font-size: var(--font-size-h5);
+        }
+        &-h6 {
+            font-size: var(--font-size-h6);
+        }
+    }
 }
 
 .heading {
@@ -305,7 +370,6 @@ button {
 
 .btn {
     padding: 12px 24px;
-    font-weight: var(--font-weight-medium);
     @include phone() {
         padding: 8px 16px;
     }
@@ -324,7 +388,8 @@ button {
         }
     }
     &-outline {
-        bottom: 1px solid $color-neutral-900;
+        border: 1px solid $color-neutral-900;
+        background: transparent;
         &:hover, &:focus {
             background: $color-neutral-900;
             color: $color-neutral-white;
@@ -332,8 +397,45 @@ button {
     }
 }
 
+.nav-breadcrumb {
+    li+li::before {
+        content: '/';
+        color: $color-neutral-300;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    a {
+        color: $color-neutral-600;
+    }
+    @include phone(){
+        font-size: var(--font-size-psm);
+    }
+}
+
 .card {
     &:hover img{
         opacity: 0.6;
+    }
+}
+
+.overflow-a {
+    overflow-x: auto;
+    scrollbar-width: none;
+    flex-wrap: nowrap;
+
+    .card {
+        flex: 0 0 auto;
+    }
+
+    @include pad(){
+        .card {
+            width: 40%;
+        }
+    }
+
+    @include phone-sm(){
+        .card {
+            width: 85%;
+        }
     }
 }

@@ -7,12 +7,16 @@ $color-primary-500: #477A11;
 $color-neutral-white: #FFFFFF;
 $color-neutral-100: #F8F9FA;
 $color-neutral-300: #DEE2E6;
+$color-neutral-500: #ADB5BD;
 $color-neutral-600: #6C757D;
 $color-neutral-700: #495057;
 $color-neutral-900: #212529;
 
+$color-danger-300: #D74F4F;
+
 :root {
     --font-size-h1: 40px;
+    --font-size-h2: 32px;
     --font-size-h3: 28px;
     --font-size-h4: 24px;
     --font-size-h5: 20px;
