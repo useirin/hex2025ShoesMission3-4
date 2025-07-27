@@ -39,7 +39,7 @@ button {
     cursor: pointer;
     border-radius: 4px;
     font-size: var(--font-size-pmd);
-    
+
     &:disabled {
         cursor: default;
         pointer-events: none;
@@ -290,6 +290,7 @@ button {
 
 .d-lg-none {
     display: none;
+
     @include phone() {
         display: block;
     }
@@ -302,6 +303,7 @@ button {
 
 .breakline {
     display: none;
+
     @include phone-xsm() {
         display: inline-block;
     }
@@ -377,7 +379,7 @@ button {
 
     &-primary {
         background: $color-primary-300;
-        &:hover, &:focus {
+        &:hover {
             color: $color-primary-500;
         }
     }
@@ -385,7 +387,7 @@ button {
     &-neutral {
         background: $color-neutral-900;
         color: $color-neutral-white;
-        &:hover, &:focus {
+        &:hover {
             background: $color-neutral-700;
         }
     }
@@ -393,7 +395,7 @@ button {
     &-outline {
         border: 1px solid $color-neutral-900;
         background: transparent;
-        &:hover, &:focus {
+        &:hover {
             background: $color-neutral-900;
             color: $color-neutral-white;
         }
