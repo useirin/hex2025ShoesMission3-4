@@ -101,6 +101,12 @@ button {
         padding-right: 12px;
     }
 
+    &-8 {
+        width: calc(100% / 12 * 8);
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
     &-10 {
         width: calc(100% / 12 * 10);
         padding-left: 12px;
@@ -235,11 +241,28 @@ button {
     }
 }
 
-
 .my {
     &-16 {
         margin-top: 16px;
         margin-bottom: 16px;
+    }
+}
+
+.m0-a {
+    margin: 0 auto;
+}
+
+.pb {
+    &-48 {
+        padding-bottom: 48px;
+    }
+}
+
+@media (max-width: 767px) {
+    .pb-sm {
+        &-32 {
+            padding-bottom: 32px;
+        }
     }
 }
 
@@ -265,6 +288,7 @@ button {
 }
 
 @media (max-width: 767px) {
+
     .py-sm {
         &-40 {
             padding-top: 40px;
@@ -319,6 +343,14 @@ button {
     color: $color-neutral-white;
 }
 
+.heading {
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-heading);
+}
+.weight-regular {
+    font-weight: var(--font-weight-regular);
+}
+
 .fontsize-h1 {
     font-size: var(--font-size-h1);
 }
@@ -340,24 +372,22 @@ button {
 
 @media (max-width: 768px) {
     .fontsize-sm {
+        &-h3 {
+            font-size: var(--font-size-h3);
+        }
+
         &-h4 {
             font-size: var(--font-size-h4);
         }
+
         &-h5 {
             font-size: var(--font-size-h5);
         }
+
         &-h6 {
             font-size: var(--font-size-h6);
         }
     }
-}
-
-.heading {
-    font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-heading);
-}
-.weight-regular {
-    font-weight: var(--font-weight-regular);
 }
 
 .section-border {
