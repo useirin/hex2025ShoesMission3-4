@@ -39,6 +39,7 @@ button {
     cursor: pointer;
     border-radius: 4px;
     font-size: var(--font-size-pmd);
+    
     &:disabled {
         cursor: default;
         pointer-events: none;
@@ -380,6 +381,7 @@ button {
             color: $color-primary-500;
         }
     }
+
     &-neutral {
         background: $color-neutral-900;
         color: $color-neutral-white;
@@ -387,6 +389,7 @@ button {
             background: $color-neutral-700;
         }
     }
+
     &-outline {
         border: 1px solid $color-neutral-900;
         background: transparent;
@@ -404,9 +407,11 @@ button {
         padding-left: 12px;
         padding-right: 12px;
     }
+
     a {
         color: $color-neutral-600;
     }
+
     @include phone(){
         font-size: var(--font-size-psm);
     }
