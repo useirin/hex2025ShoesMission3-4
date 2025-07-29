@@ -116,14 +116,20 @@
         display: none;
 
         &:checked + .btn-favorite .bi-heart,
+        &:checked + .btn-favorite .add,
         &:checked + .btn-favorite-sm .bi-heart {
             display: none;
         }
 
         &:checked + .btn-favorite .bi-heart-fill,
+        &:checked + .btn-favorite .saved,
         &:checked + .btn-favorite-sm .bi-heart-fill {
             display: inline;
         }
+    }
+
+    .saved {
+        display: none;
     }
 
     @include phone-sm(){
