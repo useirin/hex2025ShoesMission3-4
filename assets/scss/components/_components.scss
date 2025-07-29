@@ -1,0 +1,86 @@
+.section-border {
+    border-bottom: 1px solid $color-neutral-300;
+}
+
+.linkBtn {
+    &:hover, &:focus {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
+}
+
+.btn {
+    padding: 12px 24px;
+    @include phone() {
+        padding: 8px 16px;
+    }
+
+    &-primary {
+        background: $color-primary-300;
+        &:hover {
+            color: $color-primary-500;
+        }
+    }
+
+    &-neutral {
+        background: $color-neutral-900;
+        color: $color-neutral-white;
+        &:hover {
+            background: $color-neutral-700;
+        }
+    }
+
+    &-outline {
+        border: 1px solid $color-neutral-900;
+        background: transparent;
+        &:hover {
+            background: $color-neutral-900;
+            color: $color-neutral-white;
+        }
+    }
+}
+
+.nav-breadcrumb {
+    li+li::before {
+        content: '/';
+        color: $color-neutral-300;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    a {
+        color: $color-neutral-600;
+    }
+
+    @include phone(){
+        font-size: var(--font-size-psm);
+    }
+}
+
+.card {
+    &:hover img{
+        opacity: 0.6;
+    }
+}
+
+.overflow-a {
+    overflow-x: auto;
+    scrollbar-width: none;
+    flex-wrap: nowrap;
+
+    .card {
+        flex: 0 0 auto;
+    }
+
+    @include pad(){
+        .card {
+            width: 40%;
+        }
+    }
+
+    @include phone-sm(){
+        .card {
+            width: 85%;
+        }
+    }
+}

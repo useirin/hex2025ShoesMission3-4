@@ -1,0 +1,64 @@
+.text-primary-400 {
+    color: $color-primary-400;
+}
+.text-attention {
+    color: $color-danger-300;
+}
+.text-on-dark {
+    color: $color-neutral-white;
+}
+
+.heading {
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-heading);
+}
+.weight-regular {
+    font-weight: var(--font-weight-regular);
+}
+
+.fsz-h1 {
+    font-size: var(--font-size-h1);
+}
+.fsz-h2 {
+    font-size: var(--font-size-h2);
+}
+.fsz-h3 {
+    font-size: var(--font-size-h3);
+}
+.fsz-h4 {
+    font-size: var(--font-size-h4);
+}
+.fsz-h5 {
+    font-size: var(--font-size-h5);
+}
+.fsz-h6 {
+    font-size: var(--font-size-h6);
+}
+
+@media (max-width: 768px) {
+    .fsz-sm {
+        &-h3 {
+            font-size: var(--font-size-h3);
+        }
+
+        &-h4 {
+            font-size: var(--font-size-h4);
+        }
+
+        &-h5 {
+            font-size: var(--font-size-h5);
+        }
+
+        &-h6 {
+            font-size: var(--font-size-h6);
+        }
+    }
+}
+
+.break-line {
+    display: none;
+
+    @include phone-xsm() {
+        display: inline-block;
+    }
+}
