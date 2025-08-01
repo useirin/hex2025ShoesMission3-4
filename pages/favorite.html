@@ -1,23 +1,123 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>我的收藏｜URBNSTEP 鞋子電商</title>
   </head>
   <body>
-    
     <%- include('./layout/header'); -%>
 
     <main class="container py-64 py-sm-24">
-        <div class="row flex-jcc">
-            <div class="col-6 col-sm-4">
-                <h1 class="title">
-                    <i class="bi bi-check-circle-fill fontsize-h1"></i>
-                    <span class="fontsize-h3 fontsize-sm-h4 heading">我的收藏</span>
-                </h1>
+      <div class="row flex-jcc">
+        <div class="col-6 col-md-8 col-sm-4">
+          <h1 class="favorite-title d-flex mb-32 mb-sm-24">
+            <div class="check-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-check"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"
+                />
+              </svg>
             </div>
+            <span class="fsz-h3 fsz-sm-h4 heading">我的收藏</span>
+          </h1>
+
+          <div class="note d-flex mb-32 mb-sm-24">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-truck"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"
+              />
+            </svg>
+            <p class="ml-12">
+              門市營業時間：<br class="break-line-sm" />週一至週五
+              <time datetime="10:00">10:00</time> -
+              <time datetime="22:00">22:00</time>
+            </p>
+          </div>
+
+          <ul>
+            <li class="card-long d-flex section-border pb-32 mb-32 mb-sm-24">
+              <img
+                src="../assets/images/02_list_product-1.png"
+                alt="PLATFORM 404 撞色鞋款商品圖"
+              />
+              <div class="card-long-text ml-16">
+                <h2 class="fsz-h5 fsz-sm-h6 heading mb-8">PLATFORM 404</h2>
+                <ul>
+                  <li class="mb-8">
+                    <span>尺寸</span>
+                    <span class="value ml-12">38</span>
+                  </li>
+                  <li class="mb-8">
+                    <span>顏色</span>
+                    <span class="value ml-12">Navy</span>
+                  </li>
+                </ul>
+                <p class="value fsz-h6 heading">NT$2,600</p>
+              </div>
+            </li>
+
+            <li class="card-long d-flex section-border pb-32 mb-32 mb-sm-24">
+              <img
+                src="../assets/images/02_list_product-5.png"
+                alt="BOOMBLOK 純白鞋款商品圖"
+              />
+              <div class="card-long-text ml-16">
+                <h2 class="fsz-h5 fsz-sm-h6 heading mb-8">BOOMLOK</h2>
+                <ul>
+                  <li class="mb-8">
+                    <span>尺寸</span><span class="value ml-12">38</span>
+                  </li>
+                  <li class="mb-8">
+                    <span>顏色</span>
+                    <span class="value ml-12">White</span>
+                  </li>
+                </ul>
+                <p class="value fsz-h6 heading">NT$3,200</p>
+              </div>
+            </li>
+
+            <li class="card-long d-flex section-border pb-32 mb-32 mb-sm-24">
+              <img
+                src="../assets/images/02_list_product-4.png"
+                alt="Melty Kiss 紫白花朵鞋款商品圖"
+              />
+              <div class="card-long-text ml-16">
+                <h2 class="fsz-h5 fsz-sm-h6 heading mb-8">MELTY KISS</h2>
+                <ul>
+                  <li class="mb-8">
+                    <span>尺寸</span>
+                    <span class="value ml-12">38</span>
+                  </li>
+                  <li class="mb-8">
+                    <span>顏色</span>
+                    <span class="value ml-12">Violet</span>
+                  </li>
+                </ul>
+                <p class="value fsz-h6 heading">NT$4,000</p>
+              </div>
+            </li>
+          </ul>
+
+          <button type="button" class="btn btn-sm btn-neutral m0-a d-block">
+            立即預約門市試穿
+          </button>
         </div>
+      </div>
     </main>
 
     <%- include('./layout/footer'); -%>

@@ -1,69 +1,75 @@
 // debug 用
 // * {
-//     outline: 1px solid blue;
+//   outline: 1px solid blue;
 // }
 
 /* 全域設定 */
 *,
 *::before,
 *a::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    color: $color-neutral-900;
-    font-family: "Noto Sans", sans-serif;
-    letter-spacing: var(--letter-spacing);
-    line-height: var(--line-height-p);
-    font-weight: var(--font-weight-medium);
+  color: $color-neutral-900;
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: var(--letter-spacing);
+  line-height: var(--line-height-p);
+  font-weight: var(--font-weight-medium);
 }
 
 img {
-    vertical-align: middle;
-    width: 100%;
-    height: auto;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
 }
 
 a {
-    display: inline-block;
-    text-decoration: none;
-    color: $color-neutral-900;
+  display: inline-block;
+  text-decoration: none;
+  color: $color-neutral-900;
 }
 
 button {
-    font-family: inherit;
-    letter-spacing: var(--letter-spacing);
-    line-height: var(--line-height-p);
-    font-weight: var(--font-weight-medium);
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: var(--font-size-pmd);
+  font-family: inherit;
+  letter-spacing: var(--letter-spacing);
+  line-height: var(--line-height-p);
+  font-weight: var(--font-weight-medium);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: var(--font-size-pmd);
 
-    &:disabled {
-        cursor: default;
-        pointer-events: none;
-    }
+  &:disabled {
+    cursor: default;
+    pointer-events: none;
+  }
 }
-
 
 /* 通用設定 */
 .d-flex {
-    display: flex;
+  display: flex;
 }
 .flex-jcc {
-    justify-content: center;
+  justify-content: center;
+}
+.flex-aic {
+  align-items: center;
+}
+
+.d-block {
+  display: block;
 }
 
 .d-lg-none {
-    display: none;
+  display: none;
 
-    @include phone() {
-        display: block;
-    }
+  @include phone() {
+    display: block;
+  }
 }
 .d-sm-none {
-    @include phone() {
-        display: none;
-    }
+  @include phone() {
+    display: none;
+  }
 }
