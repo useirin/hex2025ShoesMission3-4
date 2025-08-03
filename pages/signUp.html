@@ -1,17 +1,63 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>註冊會員｜URBNSTEP 鞋子電商</title>
   </head>
   <body>
-    
     <%- include('./layout/header'); -%>
 
-    <div class="container">
-      <h1 class="fontsize-h1 py-64">註冊</h1>
-    </div>
+    <main class="container py-64 py-md-32">
+      <div class="row">
+        <div class="col-5 col-sm-all">
+          <div class="pic-100vh radius-md">
+            <picture>
+              <source srcset="../assets/images/04_login_login.png" media="(min-width:767px)" >
+              <img src="../assets/images/04_login_login-sm.png" alt="UBRNSETEP 形象宣傳圖"/>
+            </picture>
+          </div>
+        </div>
+
+        <div class="col-7 col-sm-4">
+          <div class="bg-gary radius-md">
+            <h1 class="fsz-h3 fsz-sm-h4 heading text-center mb-32 mb-sm-24">
+              歡迎！
+            </h1>
+
+            <ul class="d-flex mb-32 mb-sm-24">
+              <li class="tab tab-unact heading">
+                <a href="logIn.html">登入</a>
+              </li>
+              <li class="tab tab-act heading">註冊</li>
+            </ul>
+
+            <ul>
+              <li class="third-party mb-8">
+                <a href="#" class="d-flex">
+                  <img src="../assets/images/04_login_facebook.svg" alt="Facebook Logo" />
+                  <p class="weight-regular">Facebook 註冊</p>
+                </a>
+              </li>
+
+              <li class="third-party mb-8">
+                <a href="#" class="d-flex">
+                  <img src="../assets/images/04_login_apple.svg" alt="Facebook Logo" />
+                  <p class="weight-regular">Apple 註冊</p>
+                </a>
+              </li>
+
+              <li class="third-party">
+                <a href="#" class="d-flex">
+                  <img src="../assets/images/04_login_google.svg" alt="Facebook Logo" />
+                  <p class="weight-regular">Google 註冊</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <%- include('./layout/footer'); -%>
 

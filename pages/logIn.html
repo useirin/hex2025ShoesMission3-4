@@ -9,7 +9,56 @@
     
     <%- include('./layout/header'); -%>
 
+    <main class="container py-64 py-md-32">
+      <div class="row">
+        <div class="col-5 col-sm-all">
+          <div class="pic-100vh radius-md">
+            <picture>
+              <source srcset="../assets/images/04_login_login.png" media="(min-width:767px)" >
+              <img src="../assets/images/04_login_login-sm.png" alt="UBRNSETEP 形象宣傳圖"/>
+            </picture>
+          </div>
+        </div>
 
+        <div class="col-7 col-sm-4">
+          <div class="bg-gary radius-md">
+            <h1 class="fsz-h3 fsz-sm-h4 heading text-center mb-32 mb-sm-24">
+              歡迎！
+            </h1>
+
+            <ul class="d-flex mb-32 mb-sm-24">
+              <li class="tab tab-act heading">登入</li>
+              <li class="tab tab-unact heading">
+                <a href="signUp.html">註冊</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="third-party mb-8">
+                <a href="#" class="d-flex">
+                  <img src="../assets/images/04_login_facebook.svg" alt="Facebook Logo" />
+                  <p class="weight-regular">Facebook 登入</p>
+                </a>
+              </li>
+
+              <li class="third-party mb-8">
+                <a href="#" class="d-flex">
+                  <img src="../assets/images/04_login_apple.svg" alt="Facebook Logo" />
+                  <p class="weight-regular">Apple 登入</p>
+                </a>
+              </li>
+
+              <li class="third-party">
+                <a href="#" class="d-flex">
+                  <img src="../assets/images/04_login_google.svg" alt="Facebook Logo" />
+                  <p class="weight-regular">Google 登入</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <%- include('./layout/footer'); -%>
 

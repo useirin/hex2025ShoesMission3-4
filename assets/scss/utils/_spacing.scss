@@ -132,6 +132,11 @@
 }
 
 .py {
+  &-120 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   &-64 {
     padding-top: 64px;
     padding-bottom: 64px;
@@ -149,6 +154,15 @@
   &-12 {
     padding-top: 12px;
     padding-bottom: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .py-md {
+    &-32 {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
 }
 

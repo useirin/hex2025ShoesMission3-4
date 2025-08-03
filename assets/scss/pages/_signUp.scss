@@ -1,0 +1,55 @@
+.pic-100vh {
+  background-image: linear-gradient(180deg, #051111, #1b1714);
+  height: 100%; // 高度對齊
+}
+
+.bg-gary {
+  background-image: url(../images/04_login_login-bg.png);
+  background-position: center;
+  padding: 120px 80px;
+  height: 100%; // 高度對齊
+
+  @include pad() {
+    padding: 64px 24px;
+  }
+  @include phone() {
+    background-image: none;
+    padding: 32px 0;
+  }
+}
+
+.tab {
+  width: 50%;
+  text-align: center;
+
+  &-act {
+    box-shadow: inset 0 -2px 0px $color-neutral-900;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  &-unact {
+    box-shadow: inset 0 -2px 0px $color-neutral-300;
+
+    a {
+      color: $color-neutral-600;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      width: 100%; // 讓點擊範圍佔滿 li
+    }
+  }
+}
+
+.third-party {
+  background: $color-neutral-white;
+  padding: 20px 12px;
+  border: 1px solid $color-neutral-300;
+  border-radius: var(--radius-sm);
+
+  img {
+    width: 40px;
+  }
+  a {
+    gap: 12px;
+    align-items: center;
+  }
+}

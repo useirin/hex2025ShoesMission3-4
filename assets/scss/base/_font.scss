@@ -7,6 +7,9 @@
 .text-on-dark {
   color: $color-neutral-white;
 }
+.text-center {
+  text-align: center;
+}
 
 .heading {
   font-weight: var(--font-weight-bold);
@@ -33,6 +36,7 @@
 }
 .fsz-h6 {
   font-size: var(--font-size-h6);
+  // 16px
 }
 
 @media (max-width: 768px) {
