@@ -1,3 +1,6 @@
+.text-primary-300 {
+  color: $color-primary-300;
+}
 .text-primary-400 {
   color: $color-primary-400;
 }
@@ -19,28 +22,49 @@
   font-weight: var(--font-weight-regular);
 }
 
-.fsz-h1 {
-  font-size: var(--font-size-h1);
-}
-.fsz-h2 {
-  font-size: var(--font-size-h2);
-}
-.fsz-h3 {
-  font-size: var(--font-size-h3);
-}
-.fsz-h4 {
-  font-size: var(--font-size-h4);
-}
-.fsz-h5 {
-  font-size: var(--font-size-h5);
-}
-.fsz-h6 {
-  font-size: var(--font-size-h6);
-  // 16px
+.fsz {
+  &-d1 {
+    font-size: var(--font-size-d1);
+  }
+  &-d2 {
+    font-size: var(--font-size-d2);
+  }
+
+  &-h1 {
+    font-size: var(--font-size-h1);
+  }
+  &-h2 {
+    font-size: var(--font-size-h2);
+  }
+  &-h3 {
+    font-size: var(--font-size-h3);
+  }
+  &-h4 {
+    font-size: var(--font-size-h4);
+  }
+  &-h5 {
+    font-size: var(--font-size-h5);
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  .fsz-md {
+    &-h6 {
+      font-size: var(--font-size-h6);
+    }
+  }
+}
+
+@media (max-width: 767px) {
   .fsz-sm {
+    &-d2 {
+      font-size: var(--font-size-d2);
+    }
+
+    &-h2{
+      font-size: var(--font-size-h2);
+    }
+
     &-h3 {
       font-size: var(--font-size-h3);
     }
@@ -62,7 +86,7 @@
 .break-line {
   display: none;
 
-  @include phone-xsm() {
+  @include phone() {
     display: inline-block;
   }
 }
@@ -74,3 +98,14 @@
     display: inline-block;
   }
 }
+
+.break-line-xsm {
+  display: none;
+
+  @include phone-xsm() {
+    display: inline-block;
+  }
+}
+
+
+

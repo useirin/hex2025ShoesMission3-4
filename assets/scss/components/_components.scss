@@ -36,10 +36,10 @@
 
   &-outline {
     border: 1px solid $color-neutral-900;
-    background: transparent;
+    background: $color-neutral-white;
     &:hover {
-      background: $color-neutral-900;
       color: $color-neutral-white;
+      background: $color-neutral-900;
     }
   }
 }
@@ -122,5 +122,21 @@
     .card {
       width: 85%;
     }
+  }
+}
+
+.overflow-none {
+  overflow-x: hidden;
+}
+
+.label {
+  position: relative;
+  
+  span {
+    position: absolute;
+    background: $color-primary-100;
+    color: $color-primary-400;
+    padding: 8px 12px;
+    left: 0;
   }
 }

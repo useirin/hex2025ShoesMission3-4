@@ -56,6 +56,15 @@ button {
 .flex-aic {
   align-items: center;
 }
+.flex-col {
+  flex-direction: column;
+
+  &-sm {
+    @include phone() {
+      flex-direction: column;
+    }
+  }
+}
 
 .d-block {
   display: block;
